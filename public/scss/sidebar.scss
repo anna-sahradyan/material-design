@@ -1,0 +1,79 @@
+@import "vars";
+@import "mixin";
+
+.sidebar {
+  @include center;
+  background-color: $bg-sidebar;
+  min-height: 100dvh;
+  position: fixed;
+  width: 130px;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+
+.scrollable_content {
+  background-color: $bg-sidebar;
+
+}
+
+
+/*sidebarItem*/
+.sidebar_item {
+  @include center;
+  @include column;
+  cursor: pointer;
+  border: 1px solid green;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+
+  &:nth-child(1) .icon {
+    @include column;
+    margin: 0 auto;
+    background: $bg-icon1;
+    width: 55px;
+    height: 55px;
+    border-radius: 30%;
+  }
+
+  &:nth-child(2) .icon {
+    @include column;
+    margin: 0 auto;
+    background: $bg-icon2;
+    padding: 5px;
+    border-radius: 20px 20px;
+    max-width: 80%;
+  }
+
+  .icon_inner {
+    width: 95px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 12px;
+    font-weight: 500;
+    color: $text2;
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+
+  .icon {
+    @include center;
+    font-size: 24px;
+
+  }
+}

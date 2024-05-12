@@ -1,0 +1,72 @@
+@import "vars";
+@import "mixin";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Google Sans Text', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-width: 100%;
+  position: relative;
+  min-height: 100dvh;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 auto;
+  width: 1366px;
+  min-height: 100dvh;
+  border: 1px solid blue;
+}
+
+
+.content {
+  margin: 0 0 0 130px;
+  flex-grow: 1;
+  //border: 1px solid red;
+}
+
+.main {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+/*svg*/
+.svgMargin {
+  margin-top: 120px;
+}
+
+@import "slide";
+@import "info";
+@import "footer";
+@import "sidebar";
+@import 'reset';
+

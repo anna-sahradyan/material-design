@@ -1,0 +1,76 @@
+.slide_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.title_carousel,
+.video_carousel {
+  flex-grow: 1;
+}
+
+.title_carousel {
+  width: 616px;
+  min-height: 544px;
+  border-radius: 8%;
+  background: #F8F1F6;
+}
+.title_carousel .title_inner {
+  width: 506px;
+  margin: 40px 0 0 60px;
+}
+.title_carousel h1 {
+  font-size: 96px;
+  font-weight: 500;
+  color: #1F1F1F;
+}
+.title_carousel p {
+  color: #1F1F1F;
+  font-size: 22px;
+}
+.title_carousel .btn_title {
+  margin-top: 5px;
+  width: 223px;
+  background: #6442D6;
+  border-radius: 50px;
+  color: #fff;
+  padding: 0 48px;
+  height: 80px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+.title_carousel .btn_title:hover {
+  background: #6442D6;
+  color: #fff;
+}
+
+.video_carousel {
+  width: 616px;
+  min-height: 544px;
+  border-radius: 8%;
+  position: relative;
+}
+.video_carousel .pause {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  right: 30px;
+  border-radius: 50%;
+  border: 1px solid #1F1F1F;
+}
+.video_carousel .pause:hover {
+  background: #1F1F1F;
+  color: #fff;
+}
+
+/*# sourceMappingURL=slide.css.map */
