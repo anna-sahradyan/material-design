@@ -1,16 +1,19 @@
 @import "vars";
 @import "mixin";
 
+
 .sidebar {
   @include center;
   background-color: $bg-sidebar;
   min-height: 100dvh;
   position: fixed;
-  width: 130px;
+  width: 100px;
   height: calc(100vh - 50px);
   overflow-y: scroll;
+  overflow-x: hidden;
 
 }
+
 
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
@@ -25,33 +28,38 @@
 
 }
 
-
-/*sidebarItem*/
+/*sidebar item*/
 .sidebar_item {
-  @include center;
-  @include column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border: 1px solid green;
+  //border: 1px solid green;
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
 
   &:nth-child(1) .icon {
-    @include column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    background: $bg-icon1;
-    width: 55px;
-    height: 55px;
-    border-radius: 30%;
+    background: #F1D3F9;
+    width: 65px;
+    border-radius: 20%;
   }
 
+
   &:nth-child(2) .icon {
-    @include column;
-    margin: 0 auto;
-    background: $bg-icon2;
-    padding: 5px;
-    border-radius: 20px 20px;
-    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -50% auto;
+    background: #DCDAF5;
+    padding: 16px;
+    border-radius: 20px;
+    width: 60%;
   }
 
   .icon_inner {
@@ -62,18 +70,108 @@
   .title {
     font-size: 12px;
     font-weight: 500;
-    color: $text2;
+    color: #1C1B1D;
     text-align: center;
     margin-top: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
   }
 
   .icon {
-    @include center;
     font-size: 24px;
+  }
 
+}
+
+
+/*submenu*/
+.css-dev-only-do-not-override-1r287do {
+  background-color: $bg-sidebar;
+
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: 100px;
+  bottom: 0;
+  z-index: 1050;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 25dc0px;
+  background-color: $bg-sidebar;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.offcanvas-body {
+  width: 240px;
+  overflow-y: auto;
+  height: calc(100dvh - 20px);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $text;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.develop {
+  margin: 5px 0 10px 0;
+  width: 204px;
+  background: $bg-icon2;
+  padding: 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $text2;
+
+
+}
+
+.develop:hover {
+  background: inherit;
+}
+
+.title_li ,.li_submenu{
+  margin: 5px 0 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 204px;
+  padding: 15px;
+  color: $text2;
+  &:hover {
+    background: linear-gradient(0deg, rgba(77, 66, 86, 0.08), rgba(77, 66, 86, 0.08));
+    border-radius: 24px;
   }
 }
+
+
+.offcanvas-backdrop {
+  position: fixed;
+  width: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $bg-sidebar;
+
+}
+
+.ul_submenu {
+  list-style-type: none;
+}
+
+.li_submenu {
+
+}
+
+

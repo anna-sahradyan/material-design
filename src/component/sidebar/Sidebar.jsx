@@ -3,6 +3,7 @@ import menu from "../data";
 import SidebarItem from "./SidebarItem";
 
 const Sidebar = ({children}) => {
+
     return (
         <div className={'container'}>
             <div className={'sidebar'}>
@@ -14,7 +15,6 @@ const Sidebar = ({children}) => {
                         />
                     ))}
                 </div>
-
             </div>
             <main className={'main'}>{children}</main>
         </div>
@@ -22,3 +22,4 @@ const Sidebar = ({children}) => {
 };
 
 export default Sidebar;
+

@@ -1,31 +1,37 @@
 {
   "updates": [
     {
+      "id": 1,
       "title": "Content design",
       "img": "/img/bg3.svg",
       "desc": "Guidance and best practices for UX writing and information design"
     },
     {
+      "id": 2,
       "title": "New component: Carousel",
       "img": "/img/bg11.svg",
       "desc": "An expressive new way to display a horizontally scrolling collection of content"
     },
     {
+      "id": 3,
       "title": "M3 for Jetpack Compose",
       "img": "/img/bg12.svg",
       "desc": "With the latest stable release, use Jetpack Compose to build a complete M3 Android app"
     },
     {
+      "id": 4,
       "title": "Material Theme Builder",
       "img": "/img/bg6.svg",
       "desc": "Easily migrate or get started with the M3 color system and dynamic color"
     },
     {
+      "id": 5,
       "title": "How the color system works",
       "img": "/img/bg10.svg",
       "desc": "From color roles and accessible tone pairs to dynamic color, learn how color works in Material"
     },
     {
+      "id": 6,
       "title": "Using Material icons",
       "img": "/img/bg8.svg",
       "desc": "Learn how to use and customize the latest system icons for your UI"
@@ -33,38 +39,39 @@
   ],
   "info": [
     {
+      "id": 7,
       "title": "Material Design at Google I/O",
       "img": "/img/abs2.svg",
       "desc": "See the full list of Material talks and tutorials launching at I/O 2024"
     },
-    {
+    { "id": 8,
       "title": "How to get Google Fonts",
       "img": "/img/bg9.svg",
       "desc": "New API updates and website upgrades make font integration easier than ever"
     },
-    {
-      "title": "How to get Google Fonts",
+    { "id": 9,
+      "title": "Figma design kit",
       "img": "/img/bg7.svg",
-      "desc": "New API updates and website upgrades make font integration easier than ever"
+      "desc": "Start designing and prototyping with the complete M3 library of ready-made components"
     }
   ],
   "resource": [
-    {
+    {"id": 10,
       "title": "Material blog",
       "desc": "News, tutorials, and inspiration from the Material team"
     },
-    {
+    {"id": 11,
       "title": "Figma design kit",
       "desc": "Customizable styles and components to help you design with Material 3"
     },
-    {
+    {"id": 12,
       "title": "Get started",
       "desc": "Guides, videos, and tools to start building with Material"
-    } ,{
+    },
+    {"id": 13,
       "title": "Develop",
       "desc": "Code and developer documentation for building with Material"
     }
   ]
-
 }
 

@@ -1,6 +1,43 @@
 @import "vars";
 @import "mixin";
 
+:root {
+  --background-color: #ffffff;
+  --primary-text-color: $text;
+  --secondary-text-color: #ffffff;
+  --toggle-bg-sidebar: $bg-sidebar;
+  --toggle-btn: $btn;
+}
+
+[data-theme="dark"] {
+  --background-color:$bg-dark-mode;
+  --bg-dark-color: $bg-dark-color;
+  --bg-dark-btn: $bg-dark-btn;
+  --bg-dark-first-icon:$bg-dark-first-icon;
+  --bg-dark-second-icon:$bg-dark-second-icon;
+  --bg-dark-border-card:$bg-dark-border-card;
+  --bg-dark-card-hover:$bg-dark-card-hover;
+  --bg-dark-link-hover:$bg-dark-link-hover;
+
+}
+[data-theme="light"]{
+  --bg-light-color: #FEFBFF;
+  --bg-light-btn:$btn;
+  --bg-light-first-icon:$bg-icon1;
+  --bg-light-second-icon:$home-icon;
+  --bg-light-border-card:$bg-dark-border-card;
+  --bg-light-card-hover:$bg-dark-card-hover;
+  --bg-light-link-hover:$bg-dark-link-hover;
+}
+
+body {
+  margin: 0;
+  font-family: 'Google Sans Text', sans-serif;
+  min-height: 100vh;
+  background-color: #FEFBFF;
+}
+
+
 html {
   box-sizing: border-box;
 }
@@ -36,7 +73,6 @@ ul {
 }
 
 .container {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,14 +85,15 @@ ul {
 
 
 .content {
-  margin: 0 0 0 130px;
+  margin: 0 0 0 100px;
   flex-grow: 1;
-  //border: 1px solid red;
+
 }
 
 .main {
   flex-grow: 1;
   min-width: 0;
+
 }
 
 /*svg*/
@@ -69,4 +106,4 @@ ul {
 @import "footer";
 @import "sidebar";
 @import 'reset';
-
+@import "s";

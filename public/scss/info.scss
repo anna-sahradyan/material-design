@@ -6,16 +6,6 @@
   position: relative;
   gap: 4px;
   color: $text2;
-  .info_inner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(394px, 1fr));
-    gap: 4px;
-  }
-
-  span {
-    display: inline-block;
-  }
-
   h2 {
     display: flex;
     justify-content: flex-start;
@@ -24,46 +14,66 @@
     line-height: 52px;
     margin: 100px 0 25px 25px;
   }
+}
+  .info_inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    gap: 4px;
+  }
+
+  span {
+    display: inline-block;
+  }
   .card {
     border-radius: 24px;
     background: $card;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
     &:hover {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
       background: $bg-card-hover-color;
       cursor: pointer;
     }
-    .info_img {
-      width: 100%;
-      min-height: 200px;
-      border-radius: 24px;
-      object-fit: cover;
-    }
-
-    .card_inner {
-      width: 348px;
-      margin: 5px 5px 40px 20px;
-
-      .span_title {
-        margin-top: 15px;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-        color: $text;
-      }
-
-      .span_info {
-        margin-top: 15px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 24px;
-
-      }
-    }
-
-
+  }
+  .card_border_info,.card_border_updates {
+    border-radius: 28px;
+    border: 2px solid $text;
+    background: $bg-card-hover-color;
+    transition: border-radius 0.3s, border-color 0.3s;
   }
 
+  .card_border_resource {
+    border: 2px solid $text;
+    border-radius: 50px;
+    background: $bg-card-hover-color;
+    transition: border-radius 0.3s, border-color 0.3s;
+  }
 
-}
+.info_img {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+.card_inner {
+    width: 348px;
+    margin: 5px 5px 40px 20px;
+  }
+
+  .span_title {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $text;
+  }
+
+  .span_info {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+
+  }
 
 .resources_inner {
   display: grid;
